@@ -8,7 +8,7 @@ RSpec.describe 'Members', type: :feature do
       select 'Fire Nation', from: :nation
       click_button 'Search For Members'
 
-      expect(page).to have_content('Total Members: ')
+      expect(page).to have_content('A total of 97 live in the Fire Nation')
     end
     
     it 'lists the first 25 members'
