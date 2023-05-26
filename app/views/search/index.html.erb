@@ -3,10 +3,21 @@
 <% @members.each do |member| %>
   <section class="member">
     <h2 class="name"><%= member.name %></h2>
+
     <% if member.photo.nil? %>
       <p class="photo">No photo available</p>
     <% else %>
       <p class="photo"><%= image_tag(member.photo) %></p>
     <% end %>
+
+    <p class="affiliation"><%= member.affiliation %></p>
+
+    <div class="allies">
+      <ul>
+        <% member.allies.each do |ally| %>
+          <li><%= ally %></li>
+        <% end %>
+      </ul>
+    </div>
   </section>
 <% end %>
