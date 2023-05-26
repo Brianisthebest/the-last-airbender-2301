@@ -1,1 +1,9 @@
-<h1>A total of <%= @parsed.count %> live in the <%= @title %></h1>
+<h1>A total of <%= @parsed.count %> members live in the <%= @title %></h1>
+
+<ul>
+  <% @members.each do |member| %>
+    <section class="member">
+      <li><%= member.name %></li>
+    </section>
+  <% end %>
+</ul>
