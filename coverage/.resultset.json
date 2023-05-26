@@ -228,10 +228,43 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
           null,
           null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/app/controllers/search_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          25,
           null,
           null,
           null
@@ -248,17 +281,17 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
           null,
           null
         ]
       }
     },
-    "timestamp": 1685130269
+    "timestamp": 1685130551
   }
 }
