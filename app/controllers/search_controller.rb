@@ -8,7 +8,7 @@ class SearchController < ApplicationController
 
     @title = nation.gsub("+", " ").titleize
     @parsed = JSON.parse(response.body, symbolize_names: true)
-    # total count of members is 97
+
     @members = @parsed[0..24].map do |member|
       Member.new(member)
     end

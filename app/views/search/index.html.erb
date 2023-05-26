@@ -1,9 +1,12 @@
 <h1>A total of <%= @parsed.count %> members live in the <%= @title %></h1>
 
-<ul>
-  <% @members.each do |member| %>
-    <section class="member">
-      <li><%= member.name %></li>
-    </section>
-  <% end %>
-</ul>
+<% @members.each do |member| %>
+  <section class="member">
+    <h2 class="name"><%= member.name %></h2>
+    <% if member.photo.nil? %>
+      <p class="photo">No photo available</p>
+    <% else %>
+      <p class="photo"><%= image_tag(member.photo) %></p>
+    <% end %>
+  </section>
+<% end %>

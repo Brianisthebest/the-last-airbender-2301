@@ -14,10 +14,27 @@ RSpec.describe 'Members', type: :feature do
     end
     
     it 'lists the first 25 members' do
-      save_and_open_page
       expect(page).to have_css('.member', count: 25)
     end
 
-    it 'for each member I see their name, photo, list of allies, list of enemies, or none of either have none, and any affiliations'
+    it 'for each member I see their name, photo, list of allies, list of enemies, or none of either have none, and any affiliations' do
+      within(first('.member')) do
+        within('.name') do
+          expect(page).to have_content('Chan (Fire Nation admiral)')
+        end
+        within('.photo') do
+          expect(page).to have_content("No photo available")
+        end
+        within('.affiliation') do
+          expect(page).to have_content('Fire Nation Navy')
+        end
+        within('.allies') do
+          expect(page).to have_content('Ozai')
+        end
+        within('.enemies') do
+          expect(page).to have_content('Earth Kingdom')
+        end
+      end
+    end
   end
 end
