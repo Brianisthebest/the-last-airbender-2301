@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Members', type: :feature do
   before(:each) do
+    @members = MembersFacade.new.get_members('fire+nation')
     visit '/'
   
     select 'Fire Nation', from: :nation
