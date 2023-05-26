@@ -19,5 +19,13 @@
         <% end %>
       </ul>
     </div>
+
+        <div class="enemies">
+      <ul>
+        <% member.enemies.each do |enemy| %>
+          <li><%= enemy %></li>
+        <% end %>
+      </ul>
+    </div>
   </section>
 <% end %>

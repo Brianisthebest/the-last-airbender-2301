@@ -12,5 +12,6 @@ class SearchController < ApplicationController
     @members = @parsed[0..24].map do |member|
       Member.new(member)
     end
+    require 'pry'; binding.pry
   end
 end
