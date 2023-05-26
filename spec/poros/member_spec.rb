@@ -4,7 +4,7 @@ RSpec.describe Member do
   describe 'initialize' do
     it 'exists and has attributes' do
       data = { 
-        :id=>"5cf5679a915ecad153ab68cc",
+        :_id=>"5cf5679a915ecad153ab68cc",
         :name=>"Afiko",
         :allies=>["Fire Nation"],
         :enemies=>["Aang"],
@@ -24,7 +24,7 @@ RSpec.describe Member do
       expect(member.enemies).to be_an(Array)
       expect(member.enemies).to eq(["Aang"])
       expect(member.photo).to be_an(String)
-      expect(member.photo).to eq(["https://vignette.wikia.nocookie.net/avatar/images/2/24/Afiko.png/revision/latest?cb=20121121024128"])
+      expect(member.photo).to eq("https://vignette.wikia.nocookie.net/avatar/images/2/24/Afiko.png/revision/latest?cb=20121121024128")
       expect(member.affiliation).to be_a(String)
       expect(member.affiliation).to eq("Fire Nation")
     end
