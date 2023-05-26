@@ -35,6 +35,8 @@ RSpec.describe 'Members', type: :feature do
           expect(page).to have_content('Earth Kingdom')
         end
       end
+      expect(page).to have_content("Allies: None")
+      expect(page).to have_content("Enemies: None")
     end
   end
 end

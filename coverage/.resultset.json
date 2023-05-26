@@ -228,11 +228,68 @@
           1,
           1,
           null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/spec/poros/member_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/app/poros/member.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          76,
+          76,
+          76,
+          76,
+          76,
+          76,
           null,
           null
         ]
@@ -255,45 +312,23 @@
         "lines": [
           1,
           1,
-          1,
+          3,
           null,
-          1,
+          3,
           null,
-          1,
+          3,
           null,
-          1,
-          1,
+          3,
+          3,
           null,
-          1,
-          25,
+          3,
+          75,
           null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/brianguthrie/turing/mod3/the-last-airbender-2301/app/poros/member.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
           null,
           null
         ]
       }
     },
-    "timestamp": 1685133044
+    "timestamp": 1685133431
   }
 }

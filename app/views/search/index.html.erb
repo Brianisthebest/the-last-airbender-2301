@@ -13,19 +13,28 @@
     <p class="affiliation"><%= member.affiliation %></p>
 
     <div class="allies">
-      <ul>
-        <% member.allies.each do |ally| %>
-          <li><%= ally %></li>
-        <% end %>
-      </ul>
+    <% if member.allies.empty? %>
+        <p class="allies">Allies: None</p>
+      <% else %>
+        <ul>
+          <% member.allies.each do |ally| %>
+            <li><%= ally %></li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
 
-        <div class="enemies">
-      <ul>
-        <% member.enemies.each do |enemy| %>
-          <li><%= enemy %></li>
-        <% end %>
-      </ul>
+    
+    <div class="enemies">
+    <% if member.enemies.empty? %>
+        <p class="enemies">Enemies: None</p>
+      <% else %>
+        <ul>
+          <% member.enemies.each do |ally| %>
+            <li><%= ally %></li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
   </section>
 <% end %>
